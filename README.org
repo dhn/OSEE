@@ -3,6 +3,12 @@
 
 Based on the [[https://www.offensive-security.com/documentation/advanced-windows-exploitation.pdf][syllabus]] from Offensive Security.
 
+** DEP/ASLR/EMET Bypass and	Sandbox	Escape via Flash HeapSpray
+*** Tutorials
+    + [[https://rayanfam.com/topics/pykd-tutorial-part1/][PyKD Tutorial – part 1]] by Sinaei
+*** Papers/Slides/Blogs 
+    + [[https://www.offensive-security.com/vulndev/disarming-and-bypassing-emet-5-1/][Disarming and Bypassing EMET 5.1]] by Offensive Security
+    + [[https://www.xorlab.com/blog/2016/10/27/emet-memprot-bypass/][Bypassing EMET 5.5 MemProt using VirtualAlloc]] by Matthias Ganz
 ** Kernel Drivers	Exploitation (32-bit)
 *** Tutorials
     + [[https://github.com/hacksysteam/HackSysExtremeVulnerableDriver][HackSys Extreme Vulnerable Windows Driver]] by Ashfaq Ansari
