@@ -10,10 +10,12 @@ Based on the [[https://www.offensive-security.com/documentation/advanced-windows
     + [[http://niiconsulting.com/checkmate/2016/01/windows-kernel-exploitation/][Windows Kernel Exploitation]] by Neelu Tripathy
     + [[https://sizzop.github.io/2016/07/05/kernel-hacking-with-hevd-part-1.html][Kernel Hacking With HEVD Part 1 - The Setup]] by Brian Beaudry
     + [[https://www.fuzzysecurity.com/tutorials/expDev/14.html][Kernel Exploitation -> Stack Overflow]] by FuzzySecurity
+*** Papers/Slides
+    + [[https://www.coresecurity.com/system/files/publications/2016/05/Windows%20SMEP%20bypass%20U%3DS.pdf][Windows SMEP Bypass]] by Nicolas A. Economou & Enrique E. Nissim
 ** Kernel Drivers Exploitation (64-bit)
 *** Exploits 
     + [[https://github.com/Cn33liz/HSEVD-StackOverflowX64][HackSys Extreme Vulnerable Driver - Windows 10 x64 StackOverflow Exploit with SMEP Bypass]] by Cn33liz
-   
+    + [[https://www.exploit-db.com/exploits/41721/][CVE-2015-5736 - Fortinet FortiClient 5.2.3]] by Alexandru Uifalvi
 ** Books
    + [[https://www.amazon.com/Advanced-Windows-Debugging-Mario-Hewardt/dp/0321374460/?_encoding=UTF8&camp=1789&creative=9325&linkCode=ur2&tag=theethhacne0c-20][Advanced Windows Debugging]] by Mario Hewardt
    + [[https://www.amazon.com/Windows-Internals-Part-Covering-Server%C2%AE/dp/0735648735/?_encoding=UTF8&camp=1789&creative=9325&linkCode=ur2&tag=theethhacne0c-20][Windows Internals, Part 1]] by Mark E. Russinovich
