@@ -1,12 +1,12 @@
 #+TITLE:     Resources
-#+SUBTITLE:  Collection of resources for my preparation to take the OSEE certification.
 
+Collection of resources for my preparation to take the OSEE certification.
 Based on the [[https://www.offensive-security.com/documentation/advanced-windows-exploitation.pdf][syllabus]] from Offensive Security.
 
-** DEP/ASLR/EMET Bypass and	Sandbox	Escape via Flash HeapSpray
-*** Tutorials
-    + [[https://rayanfam.com/topics/pykd-tutorial-part1/][PyKD Tutorial – part 1]] by Sinaei
-*** Papers/Slides/Blogs 
+** Bypass and	Sandbox	Escape
+*** Enhanced Mitigation Experience Toolkit (EMET)
+**** Papers/Slides/Blogs 
+    + [[https://www.offensive-security.com/vulndev/disarming-emet-v5-0/][Disarming EMET v5.0]] by Offensive Security
     + [[https://www.offensive-security.com/vulndev/disarming-and-bypassing-emet-5-1/][Disarming and Bypassing EMET 5.1]] by Offensive Security
     + [[https://www.xorlab.com/blog/2016/10/27/emet-memprot-bypass/][Bypassing EMET 5.5 MemProt using VirtualAlloc]] by Matthias Ganz
 ** Kernel Drivers	Exploitation (32-bit)
@@ -22,6 +22,9 @@ Based on the [[https://www.offensive-security.com/documentation/advanced-windows
 *** Exploits 
     + [[https://github.com/Cn33liz/HSEVD-StackOverflowX64][HackSys Extreme Vulnerable Driver - Windows 10 x64 StackOverflow Exploit with SMEP Bypass]] by Cn33liz
     + [[https://www.exploit-db.com/exploits/41721/][CVE-2015-5736 - Fortinet FortiClient 5.2.3]] by Alexandru Uifalvi
+** Misc
+*** Tutorials
+    + [[https://rayanfam.com/topics/pykd-tutorial-part1/][PyKD Tutorial – part 1]] by Sinaei
 ** Books
    + [[https://www.amazon.com/Advanced-Windows-Debugging-Mario-Hewardt/dp/0321374460/?_encoding=UTF8&camp=1789&creative=9325&linkCode=ur2&tag=theethhacne0c-20][Advanced Windows Debugging]] by Mario Hewardt
    + [[https://www.amazon.com/Windows-Internals-Part-Covering-Server%C2%AE/dp/0735648735/?_encoding=UTF8&camp=1789&creative=9325&linkCode=ur2&tag=theethhacne0c-20][Windows Internals, Part 1]] by Mark E. Russinovich
