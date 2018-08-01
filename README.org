@@ -13,7 +13,15 @@ Based on the [[https://www.offensive-security.com/documentation/advanced-windows
 **** Papers/Slides/Blogs 
     + [[https://www.offensive-security.com/vulndev/disarming-emet-v5-0/][Disarming EMET v5.0]] by Offensive Security
     + [[https://www.offensive-security.com/vulndev/disarming-and-bypassing-emet-5-1/][Disarming and Bypassing EMET 5.1]] by Offensive Security
+    + [[https://www.offensive-security.com/vulndev/disarming-enhanced-mitigation-experience-toolkit-emet/][Disarming Enhanced Mitigation Experience Toolkit (EMET)]] by Offensive Security
     + [[https://www.xorlab.com/blog/2016/10/27/emet-memprot-bypass/][Bypassing EMET 5.5 MemProt using VirtualAlloc]] by Matthias Ganz
+    + [[https://www.offensive-security.com/vulndev/fldbg-a-pykd-script-to-debug-flashplayer/][Fldbg, a Pykd script to debug FlashPlayer]] by Offensive Security
+*** Heap Spraying
+**** Tutorials
+    + [[https://www.fuzzysecurity.com/tutorials/expDev/8.html][Part 8: Spraying the Heap (Vanilla EIP)]] by FuzzySecurity
+    + [[https://www.fuzzysecurity.com/tutorials/expDev/11.html][Part 9: Spraying the Heap (Use-After-Free)]] by FuzzySecurity
+    + [[https://www.corelan.be/index.php/2013/02/19/deps-precise-heap-spray-on-firefox-and-ie10/][DEPS – Precise Heap Spray on Firefox and IE10]] by Corelan
+    + [[https://0x00sec.org/t/heap-exploitation-abusing-use-after-free/3580][Heap Exploitation ~ Abusing Use-After-Free]] by _py
 ** Kernel Drivers	Exploitation (32-bit)
 *** Tutorials
     + [[https://github.com/hacksysteam/HackSysExtremeVulnerableDriver][HackSys Extreme Vulnerable Windows Driver]] by Ashfaq Ansari
@@ -21,9 +29,15 @@ Based on the [[https://www.offensive-security.com/documentation/advanced-windows
     + [[http://niiconsulting.com/checkmate/2016/01/windows-kernel-exploitation/][Windows Kernel Exploitation]] by Neelu Tripathy
     + [[https://sizzop.github.io/2016/07/05/kernel-hacking-with-hevd-part-1.html][Kernel Hacking With HEVD Part 1 - The Setup]] by Brian Beaudry
     + [[https://www.fuzzysecurity.com/tutorials/expDev/14.html][Kernel Exploitation -> Stack Overflow]] by FuzzySecurity
+    + [[https://www.fuzzysecurity.com/tutorials/expDev/15.html][ Kernel Exploitation -> Write-What-Where]] by FuzzySecurity
+    + [[https://www.fuzzysecurity.com/tutorials/expDev/19.html][Kernel Exploitation -> UAF]] by FuzzySecurity
+    + [[https://www.whitehatters.academy/intro-to-windows-kernel-exploitation-2-windows-drivers/][Intro to Windows kernel exploitation]] by Sam Brown
+    + [[https://srcincite.io/blog/2017/09/06/sharks-in-the-pool-mixed-object-exploitation-in-the-windows-kernel-pool.html][Mixed Object Exploitation in the Windows Kernel Pool]] by Steven Seeley
 *** Papers/Slides
     + [[https://www.coresecurity.com/system/files/publications/2016/05/Windows%20SMEP%20bypass%20U%3DS.pdf][Windows SMEP Bypass]] by Nicolas A. Economou & Enrique E. Nissim
 ** Kernel Drivers Exploitation (64-bit)
+*** Tutorials
+    + [[https://blahcat.github.io/2017/08/31/arbitrary-write-primitive-in-windows-kernel-hevd/][Arbitrary Write primitive in Windows kernel (HEVD)]] by blahcat
 *** Exploits 
     + [[https://github.com/Cn33liz/HSEVD-StackOverflowX64][HackSys Extreme Vulnerable Driver - Windows 10 x64 StackOverflow Exploit with SMEP Bypass]] by Cn33liz
     + [[https://www.exploit-db.com/exploits/41721/][CVE-2015-5736 - Fortinet FortiClient 5.2.3]] by Alexandru Uifalvi
