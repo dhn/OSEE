@@ -4,6 +4,10 @@ Collection of resources for my preparation to take the OSEE certification.
 Based on the [[https://www.offensive-security.com/documentation/advanced-windows-exploitation.pdf][syllabus]] from Offensive Security.
 
 ** Bypass and	Sandbox	Escape
+*** Data Execution Prevention (DEP)
+**** Tutorials
+    + [[https://www.corelan.be/index.php/2010/06/16/exploit-writing-tutorial-part-10-chaining-dep-with-rop-the-rubikstm-cube/][Exploit writing tutorial part 10 : Chaining DEP with ROP]] by Corelan
+    + [[https://0x00sec.org/t/bypass-data-execution-protection-dep/6988][Bypass Data Execution Protection (DEP)]] by Sk0xic
 *** Enhanced Mitigation Experience Toolkit (EMET)
 **** Papers/Slides/Blogs 
     + [[https://www.offensive-security.com/vulndev/disarming-emet-v5-0/][Disarming EMET v5.0]] by Offensive Security
