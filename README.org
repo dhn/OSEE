@@ -42,7 +42,7 @@ Based on the [[https://www.offensive-security.com/documentation/advanced-windows
     + [[https://github.com/Cn33liz/HSEVD-StackOverflowX64][HackSys Extreme Vulnerable Driver - Windows 10 x64 StackOverflow Exploit with SMEP Bypass]] by Cn33liz
     + [[https://www.exploit-db.com/exploits/41721/][CVE-2015-5736 - Fortinet FortiClient 5.2.3]] by Alexandru Uifalvi
 ** Misc
-*** WinDBG
+*** WinDbg
     + [[https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/][Debugging Tools for Windows]] by Microsoft
     + [[https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/getting-started-with-windows-debugging][Getting Started with Windows Debugging]] by Microsoft
     + [[ https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/debug-universal-drivers---step-by-step-lab--echo-kernel-mode-][Debug Universal Drivers - Step by Step Lab]] by Microsoft
