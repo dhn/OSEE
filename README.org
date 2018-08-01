@@ -45,7 +45,7 @@ Based on the [[https://www.offensive-security.com/documentation/advanced-windows
 *** WinDbg
     + [[https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/][Debugging Tools for Windows]] by Microsoft
     + [[https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/getting-started-with-windows-debugging][Getting Started with Windows Debugging]] by Microsoft
-    + [[ https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/debug-universal-drivers---step-by-step-lab--echo-kernel-mode-][Debug Universal Drivers - Step by Step Lab]] by Microsoft
+    + [[https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/debug-universal-drivers---step-by-step-lab--echo-kernel-mode-][Debug Universal Drivers - Step by Step Lab]] by Microsoft
     + [[https://briolidz.wordpress.com/2013/11/17/windbg-some-debugging-commands/][WinDbg: Some debugging commands]] by Kamel Messaoudi
 *** Tutorials
     + [[https://rayanfam.com/topics/pykd-tutorial-part1/][PyKD Tutorial – part 1]] by Sinaei
