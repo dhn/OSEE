@@ -9,6 +9,10 @@ Based on the [[https://www.offensive-security.com/documentation/advanced-windows
     + [[https://www.corelan.be/index.php/2010/06/16/exploit-writing-tutorial-part-10-chaining-dep-with-rop-the-rubikstm-cube/][Exploit writing tutorial part 10 : Chaining DEP with ROP]] by Corelan
     + [[https://0x00sec.org/t/bypass-data-execution-protection-dep/6988][Bypass Data Execution Protection (DEP)]] by Sk0xic
     + [[https://0x00sec.org/t/exploit-mitigation-techniques-data-execution-prevention-dep/4634][Exploit Mitigation Techniques - Data Execution Prevention (DEP)]] by ricksanchez
+*** Supervisor Mode Execution Prevention (SMEP)
+    + [[https://www.secureauth.com/labs/publications/windows-smep-bypass-us][Windows SMEP bypass: U=S]] by Nicolas Economou & Enrique Nissim
+    + [[ https://www.abatchy.com/2018/01/kernel-exploitation-4][Kernel Exploitation 4: Stack Buffer Overflow (SMEP Bypass)]] by Mohamed Shahat
+    + [[https://salls.github.io/Linux-Kernel-CVE-2017-5123/][Exploiting CVE-2017-5123 with full protections. SMEP, SMAP, and the Chrome Sandbox!]] by Chris Salls
 *** Enhanced Mitigation Experience Toolkit (EMET)
 **** Papers/Slides/Blogs 
     + [[https://www.offensive-security.com/vulndev/disarming-emet-v5-0/][Disarming EMET v5.0]] by Offensive Security
