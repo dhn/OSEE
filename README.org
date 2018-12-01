@@ -40,6 +40,10 @@ Based on the [[https://www.offensive-security.com/documentation/advanced-windows
 *** Papers/Slides
     + [[https://www.coresecurity.com/system/files/publications/2016/05/Windows%20SMEP%20bypass%20U%3DS.pdf][Windows SMEP Bypass]] by Nicolas A. Economou & Enrique E. Nissim
 ** Kernel Drivers Exploitation (64-bit)
+*** Articles
+    + [[https://www.nccgroup.trust/globalassets/our-research/uk/whitepapers/2015/09/2015-08-28_-_ncc_group_-_exploiting_cve_2015_2426_-_release.pdf][Exploiting CVE-2015-2426, and How I Ported it to a Recent Windows 8.1 64-bit]] by Cedric Halbronn
+    + [[https://www.blackhat.com/docs/us-17/wednesday/us-17-Schenk-Taking-Windows-10-Kernel-Exploitation-To-The-Next-Level%E2%80%93Leveraging-Write-What-Where-Vulnerabilities-In-Creators-Update-wp.pdf][Taking Windows 10 Kernel-Exploitation To The Next Level Leveraging Write What Where Vulnerabilities In Creators Update]] by Morten Schenk
+    + [[http://mcdermottcybersecurity.com/articles/x64-kernel-privilege-escalation][x64 Kernel Privilege Escalation]] by mcdermott
 *** Tutorials
     + [[https://blahcat.github.io/2017/08/31/arbitrary-write-primitive-in-windows-kernel-hevd/][Arbitrary Write primitive in Windows kernel (HEVD)]] by blahcat
 *** Exploits 
