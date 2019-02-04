@@ -30,6 +30,12 @@ Based on the [[https://www.offensive-security.com/documentation/advanced-windows
     + [[https://www.fuzzysecurity.com/tutorials/expDev/11.html][Part 9: Spraying the Heap (Use-After-Free)]] by FuzzySecurity
     + [[https://www.corelan.be/index.php/2013/02/19/deps-precise-heap-spray-on-firefox-and-ie10/][DEPS – Precise Heap Spray on Firefox and IE10]] by Corelan
     + [[https://0x00sec.org/t/heap-exploitation-abusing-use-after-free/3580][Heap Exploitation ~ Abusing Use-After-Free]] by _py
+**** Heap Overflows
+    + [[http://www.fuzzysecurity.com/tutorials/mr_me/2.html][Heap Overflows For Humans 101]] by FuzzySecurity
+    + [[http://www.fuzzysecurity.com/tutorials/mr_me/3.html][Heap Overflows For Humans 102]] by FuzzySecurity
+    + [[http://www.fuzzysecurity.com/tutorials/mr_me/4.html][Heap Overflows For Humans 102.5]] by FuzzySecurity
+    + [[http://www.fuzzysecurity.com/tutorials/mr_me/5.html][Heap Overflows For Humans 103]] by FuzzySecurity
+    + [[http://www.fuzzysecurity.com/tutorials/mr_me/6.html][Heap Overflows For Humans 103.5]] by FuzzySecurity
 ** Kernel Drivers	Exploitation (32-bit)
 *** Tutorials
     + [[https://github.com/hacksysteam/HackSysExtremeVulnerableDriver][HackSys Extreme Vulnerable Windows Driver]] by Ashfaq Ansari
