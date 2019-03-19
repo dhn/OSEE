@@ -59,6 +59,9 @@ Based on the [[https://www.offensive-security.com/documentation/advanced-windows
 *** Exploits 
     + [[https://github.com/Cn33liz/HSEVD-StackOverflowX64][HackSys Extreme Vulnerable Driver - Windows 10 x64 StackOverflow Exploit with SMEP Bypass]] by Cn33liz
     + [[https://www.exploit-db.com/exploits/41721/][CVE-2015-5736 - Fortinet FortiClient 5.2.3]] by Alexandru Uifalvi
+** Kernel ASLR Bypass
+*** Articles
+	+ [[https://www.offensive-security.com/vulndev/development-of-a-new-windows-10-kaslr-bypass-in-one-windbg-command/][Development of a new Windows 10 KASLR Bypass (in One WinDBG Command)]] by Morten Schenk
 ** Shellcoding
 *** Windows 10
     + [[https://improsec.com/tech-blog/windows-kernel-shellcode-on-windows-10-part-1][Windows Kernel Shellcode on Windows 10 - Part 1]] by Morten Schenk
