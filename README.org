@@ -18,6 +18,7 @@ Based on the [[https://www.offensive-security.com/documentation/advanced-windows
     + [[https://www.secureauth.com/labs/publications/windows-smep-bypass-us][Windows SMEP bypass: U=S]] by Nicolas Economou & Enrique Nissim
     + [[https://www.abatchy.com/2018/01/kernel-exploitation-4][Kernel Exploitation 4: Stack Buffer Overflow (SMEP Bypass)]] by Mohamed Shahat
     + [[https://salls.github.io/Linux-Kernel-CVE-2017-5123/][Exploiting CVE-2017-5123 with full protections. SMEP, SMAP, and the Chrome Sandbox!]] by Chris Salls
+    + [[https://rce.wtf/2017/09/24/P4wning-the-windows-kernel-with-ROP.html][ROP: Pwn the Windows Kernel with return oriented programming]] by akayn
 *** Enhanced Mitigation Experience Toolkit (EMET)
 **** Papers/Slides/Blogs 
     + [[https://www.offensive-security.com/vulndev/disarming-emet-v5-0/][Disarming EMET v5.0]] by Offensive Security
@@ -50,6 +51,7 @@ Based on the [[https://www.offensive-security.com/documentation/advanced-windows
     + [[https://srcincite.io/blog/2017/09/06/sharks-in-the-pool-mixed-object-exploitation-in-the-windows-kernel-pool.html][Mixed Object Exploitation in the Windows Kernel Pool]] by Steven Seeley
 *** Papers/Slides
     + [[https://www.coresecurity.com/system/files/publications/2016/05/Windows%20SMEP%20bypass%20U%3DS.pdf][Windows SMEP Bypass]] by Nicolas A. Economou & Enrique E. Nissim
+    + [[http://web.archive.org/web/20170525074304/http://trackwatch.com/windows-kernel-pool-spraying/][Windows Kernel Pool Spraying]] by Philippe
 ** Kernel Drivers Exploitation (64-bit)
 *** Articles
     + [[https://www.nccgroup.trust/globalassets/our-research/uk/whitepapers/2015/09/2015-08-28_-_ncc_group_-_exploiting_cve_2015_2426_-_release.pdf][Exploiting CVE-2015-2426, and How I Ported it to a Recent Windows 8.1 64-bit]] by Cedric Halbronn
