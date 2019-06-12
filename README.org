@@ -26,13 +26,14 @@ Based on the [[https://www.offensive-security.com/documentation/advanced-windows
     + [[https://www.offensive-security.com/vulndev/disarming-enhanced-mitigation-experience-toolkit-emet/][Disarming Enhanced Mitigation Experience Toolkit (EMET)]] by Offensive Security
     + [[https://www.xorlab.com/blog/2016/10/27/emet-memprot-bypass/][Bypassing EMET 5.5 MemProt using VirtualAlloc]] by Matthias Ganz
     + [[https://www.offensive-security.com/vulndev/fldbg-a-pykd-script-to-debug-flashplayer/][Fldbg, a Pykd script to debug FlashPlayer]] by Offensive Security
-*** Heap Spraying
-**** Tutorials
+** Heap Exploitation
+*** Tutorials
+    + [[https://blog.rapid7.com/2019/06/12/heap-overflow-exploitation-on-windows-10-explained/][Heap Overflow Exploitation on Windows 10 Explained]] by Wei Chen
     + [[https://www.fuzzysecurity.com/tutorials/expDev/8.html][Part 8: Spraying the Heap (Vanilla EIP)]] by FuzzySecurity
     + [[https://www.fuzzysecurity.com/tutorials/expDev/11.html][Part 9: Spraying the Heap (Use-After-Free)]] by FuzzySecurity
     + [[https://www.corelan.be/index.php/2013/02/19/deps-precise-heap-spray-on-firefox-and-ie10/][DEPS – Precise Heap Spray on Firefox and IE10]] by Corelan
     + [[https://0x00sec.org/t/heap-exploitation-abusing-use-after-free/3580][Heap Exploitation ~ Abusing Use-After-Free]] by _py
-**** Heap Overflows
+*** Heap Overflows
     + [[http://www.fuzzysecurity.com/tutorials/mr_me/2.html][Heap Overflows For Humans 101]] by FuzzySecurity
     + [[http://www.fuzzysecurity.com/tutorials/mr_me/3.html][Heap Overflows For Humans 102]] by FuzzySecurity
     + [[http://www.fuzzysecurity.com/tutorials/mr_me/4.html][Heap Overflows For Humans 102.5]] by FuzzySecurity
