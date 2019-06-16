@@ -39,6 +39,10 @@ Based on the [[https://www.offensive-security.com/documentation/advanced-windows
     + [[http://www.fuzzysecurity.com/tutorials/mr_me/4.html][Heap Overflows For Humans 102.5]] by FuzzySecurity
     + [[http://www.fuzzysecurity.com/tutorials/mr_me/5.html][Heap Overflows For Humans 103]] by FuzzySecurity
     + [[http://www.fuzzysecurity.com/tutorials/mr_me/6.html][Heap Overflows For Humans 103.5]] by FuzzySecurity
+** Kernel Exploitation
+*** Documentation/Papers/Slides
+    + [[https://docs.microsoft.com/en-us/windows/desktop/SysInfo/kernel-objects][Kernel Objects]] by Microsoft
+    + [[https://media.blackhat.com/bh-dc-11/Mandt/BlackHat_DC_2011_Mandt_kernelpool-wp.pdf][Kernel Pool Exploitation on Windows 7]] by Tarjei Mandt
 ** Kernel Drivers	Exploitation (32-bit)
 *** Tutorials
     + [[https://github.com/hacksysteam/HackSysExtremeVulnerableDriver][HackSys Extreme Vulnerable Windows Driver]] by Ashfaq Ansari
@@ -46,8 +50,15 @@ Based on the [[https://www.offensive-security.com/documentation/advanced-windows
     + [[http://niiconsulting.com/checkmate/2016/01/windows-kernel-exploitation/][Windows Kernel Exploitation]] by Neelu Tripathy
     + [[https://sizzop.github.io/2016/07/05/kernel-hacking-with-hevd-part-1.html][Kernel Hacking With HEVD Part 1 - The Setup]] by Brian Beaudry
     + [[https://www.fuzzysecurity.com/tutorials/expDev/14.html][Kernel Exploitation -> Stack Overflow]] by FuzzySecurity
-    + [[https://www.fuzzysecurity.com/tutorials/expDev/15.html][ Kernel Exploitation -> Write-What-Where]] by FuzzySecurity
+    + [[https://www.fuzzysecurity.com/tutorials/expDev/15.html][Kernel Exploitation -> Write-What-Where]] by FuzzySecurity
+    + [[https://www.fuzzysecurity.com/tutorials/expDev/16.html][Kernel Exploitation -> Null Pointer Dereferenc]] by FuzzySecurity
+    + [[https://www.fuzzysecurity.com/tutorials/expDev/17.html][Kernel Exploitation -> Uninitialized Stack Variable]] by FuzzySecurity
+    + [[https://www.fuzzysecurity.com/tutorials/expDev/18.html][Kernel Exploitation -> Integer Overflow]] by FuzzySecurity
     + [[https://www.fuzzysecurity.com/tutorials/expDev/19.html][Kernel Exploitation -> UAF]] by FuzzySecurity
+    + [[https://www.fuzzysecurity.com/tutorials/expDev/20.html][Kernel Exploitation -> Pool Overflow]] by FuzzySecurity
+    + [[https://www.fuzzysecurity.com/tutorials/expDev/21.html][Kernel Exploitation -> GDI Bitmap Abuse (Win7-10 32/64bit)]] by FuzzySecurity
+    + [[https://www.fuzzysecurity.com/tutorials/expDev/22.html][Kernel Exploitation -> RS2 Bitmap Necromancy]] by FuzzySecurity
+    + [[https://www.fuzzysecurity.com/tutorials/expDev/23.html][Kernel Exploitation -> Logic bugs in Razer rzpnk.sys]] by FuzzySecurity
     + [[https://www.whitehatters.academy/intro-to-windows-kernel-exploitation-2-windows-drivers/][Intro to Windows kernel exploitation]] by Sam Brown
     + [[https://srcincite.io/blog/2017/09/06/sharks-in-the-pool-mixed-object-exploitation-in-the-windows-kernel-pool.html][Mixed Object Exploitation in the Windows Kernel Pool]] by Steven Seeley
 *** Papers/Slides
