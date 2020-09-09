@@ -2,6 +2,7 @@
 
 Collection of resources for my preparation to take the OSEE certification.
 Based on the [[https://www.offensive-security.com/documentation/advanced-windows-exploitation.pdf][syllabus]] from Offensive Security.
+My review can be found [[https://zer0-day.pw/2020-01/offsec-says-try-harder-or-how-to-become-an-osee/][here]].
 
 ** Browser Exploitation
 *** Safari/Chrome/Webkit
